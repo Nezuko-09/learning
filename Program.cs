@@ -1,5 +1,5 @@
 ﻿// See https://aka.ms/new-console-template for more information
-/* Console.WriteLine("Hello, World!");
+ /*Console.WriteLine("Hello, World!");
 Console.WriteLine("input a number");
 int input = int.Parse(Console.ReadLine()!);
 if(input < 0 )
@@ -18,10 +18,10 @@ else
 
 Console.WriteLine("days of the week:");
 Console.Write("enter a day's number:");
-int day;
-bool number = int.TryParse(Console.ReadLine(),out day);
+int dayNumber;
+bool number = int.TryParse(Console.ReadLine(),out dayNumber);
 
-switch (day)
+switch (dayNumber)
 {
     case 1:
     Console.WriteLine("Day 1 is Sunday");
@@ -43,6 +43,10 @@ switch (day)
     break;
     case 7:
     Console.WriteLine("Day 7 is Saturday");
+    break;
+    default:
+    Console.WriteLine("input a valid day number");
+
     break;
 }
 
@@ -86,15 +90,17 @@ for (int i = 50; i >= 0 ;)
 {
     Console.WriteLine($"{i}");
     i--;
-}*/
-
-
-Console.WriteLine("sum of even numbers from 1-100");
-for (int i = 1 ; i <= 100;)
-{
-    if ( i % 2 == 0 && i <= 100)
-    {
-        Console.WriteLine($"{i} + {i++}.... = {i+i++}");
-        i++;
-    }
 }
+*/
+
+Console.WriteLine("sum of even numbers from 1-100: ");
+
+int sum = 0;
+
+for (int i = 2; i <= 100; i += 2)
+{
+        sum += i;
+}
+Console.WriteLine($"{sum}");
+
+
