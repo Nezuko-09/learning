@@ -102,5 +102,6 @@ for (int i = 2; i <= 100; i += 2)
         sum += i;
 }
 Console.WriteLine($"{sum}");
+Console.Write("hey dude");
 
 
