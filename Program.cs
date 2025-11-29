@@ -97,4 +97,6 @@ for (int i = 1 ; i <= 100;)
         Console.WriteLine($"{i} + {i++}.... = {i+i++}");
         i++;
     }
+
+    Console.Write("bye bye");
 }
